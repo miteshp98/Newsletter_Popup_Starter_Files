@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url(../Assets/Background.png) no-repeat;
+  background-size: cover;
+}
+
+.newsletter-section {
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.newsletter-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 450px;
+  border-radius: 15px;
+}
+
+.title-image-cont {
+  background: url(../Assets/Pattern.png) no-repeat;
+  background-size: cover;
+  background-color: #2355f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: 500;
+  padding: 4em;
+  font-size: 1.6em;
+}
+
+.email-cont {
+  margin: 1.5em;
+}
+
+#email {
+  margin-top: 25px;
+  padding: 12px;
+  width: 250px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.134);
+  background-color: #f5f7fa;
+  font-size: 1em;
+}
+
+#email::placeholder {
+  opacity: 0.5;
+}
+
+#email:focus {
+  outline: 2px solid black;
+  outline-offset: 2px;
+}
+
+button {
+  padding: 14.5px;
+  width: 120px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #2355f2;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4973fc;
+}
+
+button:focus {
+  outline: 3px solid #2355f2;
+  outline-offset: 2px;
+}
+
+.email-cont > p:nth-of-type(1) {
+  font-size: 0.95em;
+  text-align: center;
+}
+
+.email-cont > p:nth-of-type(2) {
+  font-size: 0.88em;
+  padding-top: 10px;
+  padding-left: 10px;
+  opacity: 0.7;
+}
+
+.image-name-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 0.9em;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+.name-cont > p {
+  opacity: 0.6;
+}
+
+.quote {
+  text-align: center;
+  margin: 25px 10px;
+  padding: 0px 10px;
+  font-size: 0.9em;
+  line-height: 18px;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 450px) {
+  .newsletter-container {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .title-image-cont {
+    border-radius: 0;
+  }
+
+  h1 {
+    padding: 2em;
+  }
+
+  .email-cont > p {
+    text-align: center;
+  }
+
+  #email {
+    width: 60vw;
+  }
+
+  button {
+    width: 25vw;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .newsletter-container {
+    height: 100%;
+  }
+
+  h1 {
+    padding: 2em;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  #email {
+    width: 90%;
+  }
+
+  button {
+    width: 50%;
+  }
+}
